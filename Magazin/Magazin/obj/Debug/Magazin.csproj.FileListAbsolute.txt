@@ -1,0 +1,14 @@
+C:\Users\c_class\source\repos\Magazin\Magazin\bin\Debug\Magazin.exe.config
+C:\Users\c_class\source\repos\Magazin\Magazin\bin\Debug\Magazin.exe
+C:\Users\c_class\source\repos\Magazin\Magazin\bin\Debug\Magazin.pdb
+C:\Users\c_class\source\repos\Magazin\Magazin\obj\Debug\Magazin.csproj.AssemblyReference.cache
+C:\Users\c_class\source\repos\Magazin\Magazin\obj\Debug\Magazin.Form1.resources
+C:\Users\c_class\source\repos\Magazin\Magazin\obj\Debug\Magazin.Users.resources
+C:\Users\c_class\source\repos\Magazin\Magazin\obj\Debug\Magazin.Properties.Resources.resources
+C:\Users\c_class\source\repos\Magazin\Magazin\obj\Debug\Magazin.csproj.GenerateResource.cache
+C:\Users\c_class\source\repos\Magazin\Magazin\obj\Debug\Magazin.csproj.CoreCompileInputs.cache
+C:\Users\c_class\source\repos\Magazin\Magazin\obj\Debug\Magazin.exe
+C:\Users\c_class\source\repos\Magazin\Magazin\obj\Debug\Magazin.pdb
+C:\Users\c_class\source\repos\Magazin\Magazin\obj\Debug\Magazin.Products.resources
+C:\Users\c_class\source\repos\Magazin\Magazin\obj\Debug\Magazin.Catalogs.resources
+C:\Users\c_class\source\repos\Magazin\Magazin\obj\Debug\Magazin.Orders.resources
