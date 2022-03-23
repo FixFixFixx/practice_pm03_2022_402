@@ -1,0 +1,12 @@
+C:\Users\c_class\source\repos\MAGAZ\bin\Debug\MAGAZ.exe.config
+C:\Users\c_class\source\repos\MAGAZ\bin\Debug\MAGAZ.exe
+C:\Users\c_class\source\repos\MAGAZ\bin\Debug\MAGAZ.pdb
+C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.csproj.AssemblyReference.cache
+C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.MainForm.resources
+C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.Users.resources
+C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.Properties.Resources.resources
+C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.csproj.GenerateResource.cache
+C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.csproj.CoreCompileInputs.cache
+C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.exe
+C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.pdb
+C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.Catalogs.resources
