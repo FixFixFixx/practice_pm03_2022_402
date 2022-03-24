@@ -70,6 +70,7 @@
             this.catalogsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.catalogsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.openTableViewBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             nameLabel = new System.Windows.Forms.Label();
             priceLabel = new System.Windows.Forms.Label();
             quantityLabel = new System.Windows.Forms.Label();
@@ -82,6 +83,7 @@
             this.itemsBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.catalogsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.catalogsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -205,7 +207,7 @@
             this.itemsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.itemsBindingNavigator.Name = "itemsBindingNavigator";
             this.itemsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.itemsBindingNavigator.Size = new System.Drawing.Size(508, 31);
+            this.itemsBindingNavigator.Size = new System.Drawing.Size(508, 27);
             this.itemsBindingNavigator.TabIndex = 0;
             this.itemsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -215,7 +217,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
             // bindingNavigatorCountItem
@@ -308,7 +310,7 @@
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemsBindingSource, "name", true));
             this.nameTextBox.Location = new System.Drawing.Point(180, 79);
-            this.nameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(169, 22);
             this.nameTextBox.TabIndex = 2;
@@ -317,7 +319,7 @@
             // 
             this.quantityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemsBindingSource, "quantity", true));
             this.quantityTextBox.Location = new System.Drawing.Point(180, 166);
-            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.quantityTextBox.Name = "quantityTextBox";
             this.quantityTextBox.Size = new System.Drawing.Size(169, 22);
             this.quantityTextBox.TabIndex = 6;
@@ -326,7 +328,7 @@
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemsBindingSource, "description", true));
             this.descriptionTextBox.Location = new System.Drawing.Point(180, 258);
-            this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(169, 22);
             this.descriptionTextBox.TabIndex = 10;
@@ -334,7 +336,7 @@
             // buttonFirst
             // 
             this.buttonFirst.Location = new System.Drawing.Point(31, 361);
-            this.buttonFirst.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonFirst.Margin = new System.Windows.Forms.Padding(4);
             this.buttonFirst.Name = "buttonFirst";
             this.buttonFirst.Size = new System.Drawing.Size(100, 28);
             this.buttonFirst.TabIndex = 13;
@@ -345,7 +347,7 @@
             // buttonPrevious
             // 
             this.buttonPrevious.Location = new System.Drawing.Point(139, 361);
-            this.buttonPrevious.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonPrevious.Margin = new System.Windows.Forms.Padding(4);
             this.buttonPrevious.Name = "buttonPrevious";
             this.buttonPrevious.Size = new System.Drawing.Size(115, 28);
             this.buttonPrevious.TabIndex = 14;
@@ -356,7 +358,7 @@
             // buttonNext
             // 
             this.buttonNext.Location = new System.Drawing.Point(261, 361);
-            this.buttonNext.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonNext.Margin = new System.Windows.Forms.Padding(4);
             this.buttonNext.Name = "buttonNext";
             this.buttonNext.Size = new System.Drawing.Size(100, 28);
             this.buttonNext.TabIndex = 15;
@@ -367,7 +369,7 @@
             // buttonLast
             // 
             this.buttonLast.Location = new System.Drawing.Point(369, 361);
-            this.buttonLast.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonLast.Margin = new System.Windows.Forms.Padding(4);
             this.buttonLast.Name = "buttonLast";
             this.buttonLast.Size = new System.Drawing.Size(100, 28);
             this.buttonLast.TabIndex = 16;
@@ -378,7 +380,7 @@
             // buttonAdd
             // 
             this.buttonAdd.Location = new System.Drawing.Point(139, 396);
-            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAdd.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAdd.Name = "buttonAdd";
             this.buttonAdd.Size = new System.Drawing.Size(115, 28);
             this.buttonAdd.TabIndex = 17;
@@ -389,7 +391,7 @@
             // buttonDelete
             // 
             this.buttonDelete.Location = new System.Drawing.Point(263, 398);
-            this.buttonDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonDelete.Margin = new System.Windows.Forms.Padding(4);
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(99, 27);
             this.buttonDelete.TabIndex = 18;
@@ -400,7 +402,7 @@
             // buttonSave
             // 
             this.buttonSave.Location = new System.Drawing.Point(139, 432);
-            this.buttonSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonSave.Margin = new System.Windows.Forms.Padding(4);
             this.buttonSave.Name = "buttonSave";
             this.buttonSave.Size = new System.Drawing.Size(223, 28);
             this.buttonSave.TabIndex = 19;
@@ -412,7 +414,7 @@
             // 
             this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemsBindingSource, "price", true));
             this.maskedTextBox1.Location = new System.Drawing.Point(180, 121);
-            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.maskedTextBox1.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBox1.Mask = "99990.00";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(169, 22);
@@ -422,7 +424,7 @@
             // 
             this.maskedTextBox2.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemsBindingSource, "score", true));
             this.maskedTextBox2.Location = new System.Drawing.Point(180, 210);
-            this.maskedTextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.maskedTextBox2.Margin = new System.Windows.Forms.Padding(4);
             this.maskedTextBox2.Mask = "0.0";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(169, 22);
@@ -435,7 +437,7 @@
             this.comboBox1.DisplayMember = "name";
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(180, 299);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(169, 24);
             this.comboBox1.TabIndex = 22;
@@ -462,11 +464,22 @@
             this.openTableViewBtn.UseVisualStyleBackColor = true;
             this.openTableViewBtn.Click += new System.EventHandler(this.openTableViewBtn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Workings.Properties.Resources.Apps_Computer_B_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(427, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 24;
+            this.pictureBox1.TabStop = false;
+            // 
             // Items
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(508, 555);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.openTableViewBtn);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.maskedTextBox2);
@@ -489,7 +502,7 @@
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.itemsBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Items";
@@ -502,6 +515,7 @@
             this.itemsBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.catalogsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.catalogsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -543,5 +557,6 @@
         private System.Windows.Forms.BindingSource catalogsBindingSource;
         private System.Windows.Forms.BindingSource catalogsBindingSource1;
         private System.Windows.Forms.Button openTableViewBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

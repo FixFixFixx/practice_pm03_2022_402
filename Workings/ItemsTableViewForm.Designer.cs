@@ -42,11 +42,11 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.nameComboBox = new System.Windows.Forms.ComboBox();
+            this.itemsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.computer_shopDataSet = new Workings.computer_shopDataSet();
             this.showAllBtn = new System.Windows.Forms.Button();
             this.findBtn = new System.Windows.Forms.Button();
             this.closeBtn = new System.Windows.Forms.Button();
-            this.computer_shopDataSet = new Workings.computer_shopDataSet();
-            this.itemsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.itemsTableAdapter = new Workings.computer_shopDataSetTableAdapters.ItemsTableAdapter();
             this.tableAdapterManager = new Workings.computer_shopDataSetTableAdapters.TableAdapterManager();
             this.itemsBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
@@ -69,12 +69,14 @@
             this.markDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.productGroupDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.sortGroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.computer_shopDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.computer_shopDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemsBindingNavigator)).BeginInit();
             this.itemsBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemsDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -171,11 +173,13 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(283, 54);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label2.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label2.Location = new System.Drawing.Point(242, 41);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 16);
+            this.label2.Size = new System.Drawing.Size(300, 29);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Товары табличный вид";
+            this.label2.Text = "Товары (табличный вид)";
             // 
             // label4
             // 
@@ -204,6 +208,16 @@
             this.nameComboBox.Name = "nameComboBox";
             this.nameComboBox.Size = new System.Drawing.Size(293, 24);
             this.nameComboBox.TabIndex = 10;
+            // 
+            // itemsBindingSource
+            // 
+            this.itemsBindingSource.DataMember = "Items";
+            this.itemsBindingSource.DataSource = this.computer_shopDataSet;
+            // 
+            // computer_shopDataSet
+            // 
+            this.computer_shopDataSet.DataSetName = "computer_shopDataSet";
+            this.computer_shopDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // showAllBtn
             // 
@@ -234,16 +248,6 @@
             this.closeBtn.Text = "Закрыть";
             this.closeBtn.UseVisualStyleBackColor = true;
             this.closeBtn.Click += new System.EventHandler(this.closeBtn_Click);
-            // 
-            // computer_shopDataSet
-            // 
-            this.computer_shopDataSet.DataSetName = "computer_shopDataSet";
-            this.computer_shopDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // itemsBindingSource
-            // 
-            this.itemsBindingSource.DataMember = "Items";
-            this.itemsBindingSource.DataSource = this.computer_shopDataSet;
             // 
             // itemsTableAdapter
             // 
@@ -452,11 +456,22 @@
             this.productGroupDataGridViewTextBoxColumn.Name = "productGroupDataGridViewTextBoxColumn";
             this.productGroupDataGridViewTextBoxColumn.Width = 125;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Workings.Properties.Resources.Apps_Computer_B_icon;
+            this.pictureBox1.Location = new System.Drawing.Point(994, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(69, 56);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
             // ItemsTableViewForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1075, 586);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.itemsDataGridView);
             this.Controls.Add(this.itemsBindingNavigator);
             this.Controls.Add(this.closeBtn);
@@ -477,12 +492,13 @@
             this.Load += new System.EventHandler(this.ItemsTableViewForm_Load);
             this.sortGroupBox.ResumeLayout(false);
             this.sortGroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.computer_shopDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.computer_shopDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemsBindingNavigator)).EndInit();
             this.itemsBindingNavigator.ResumeLayout(false);
             this.itemsBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.itemsDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -529,5 +545,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn markDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn productGroupDataGridViewTextBoxColumn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
