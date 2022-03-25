@@ -10,3 +10,6 @@ C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.csproj.CoreCompileInputs.cac
 C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.exe
 C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.pdb
 C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.Catalogs.resources
+C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.FormTableProducts.resources
+C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.Orders.resources
+C:\Users\c_class\source\repos\MAGAZ\obj\Debug\MAGAZ.Products.resources

@@ -16,5 +16,12 @@ namespace MAGAZ
         {
             InitializeComponent();
         }
+
+        private void Users_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bAZADataSet.Users". При необходимости она может быть перемещена или удалена.
+            this.usersTableAdapter.Fill(this.bAZADataSet.Users);
+
+        }
     }
 }

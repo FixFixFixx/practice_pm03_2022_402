@@ -29,6 +29,7 @@ namespace MAGAZ
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,6 +53,12 @@ namespace MAGAZ
             this.label10 = new System.Windows.Forms.Label();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.bAZADataSet = new MAGAZ.BAZADataSet();
+            this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ordersTableAdapter = new MAGAZ.BAZADataSetTableAdapters.OrdersTableAdapter();
+            this.tableAdapterManager = new MAGAZ.BAZADataSetTableAdapters.TableAdapterManager();
+            ((System.ComponentModel.ISupportInitialize)(this.bAZADataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -127,6 +134,7 @@ namespace MAGAZ
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.ordersBindingSource, "OrderTime", true));
             this.dateTimePicker1.Location = new System.Drawing.Point(139, 181);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(262, 20);
@@ -219,6 +227,7 @@ namespace MAGAZ
             // 
             // textBox8
             // 
+            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.ordersBindingSource, "Number", true));
             this.textBox8.Location = new System.Drawing.Point(139, 233);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(262, 20);
@@ -266,6 +275,30 @@ namespace MAGAZ
             this.button1.Text = "Рассчитать";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // bAZADataSet
+            // 
+            this.bAZADataSet.DataSetName = "BAZADataSet";
+            this.bAZADataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ordersBindingSource
+            // 
+            this.ordersBindingSource.DataMember = "Orders";
+            this.ordersBindingSource.DataSource = this.bAZADataSet;
+            // 
+            // ordersTableAdapter
+            // 
+            this.ordersTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager
+            // 
+            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager.CatalogTableAdapter = null;
+            this.tableAdapterManager.EmployeesTableAdapter = null;
+            this.tableAdapterManager.OrdersTableAdapter = this.ordersTableAdapter;
+            this.tableAdapterManager.ProductsTableAdapter = null;
+            this.tableAdapterManager.UpdateOrder = MAGAZ.BAZADataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UsersTableAdapter = null;
+            // 
             // Orders
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,6 +329,9 @@ namespace MAGAZ
             this.Controls.Add(this.label1);
             this.Name = "Orders";
             this.Text = "Orders";
+            this.Load += new System.EventHandler(this.Orders_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bAZADataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,5 +362,9 @@ namespace MAGAZ
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.Button button1;
+        private BAZADataSet bAZADataSet;
+        private System.Windows.Forms.BindingSource ordersBindingSource;
+        private BAZADataSetTableAdapters.OrdersTableAdapter ordersTableAdapter;
+        private BAZADataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }
