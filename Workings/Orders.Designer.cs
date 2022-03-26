@@ -238,7 +238,7 @@
             this.ordersBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.ordersBindingNavigator.Name = "ordersBindingNavigator";
             this.ordersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.ordersBindingNavigator.Size = new System.Drawing.Size(565, 27);
+            this.ordersBindingNavigator.Size = new System.Drawing.Size(565, 31);
             this.ordersBindingNavigator.TabIndex = 0;
             this.ordersBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -248,7 +248,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
             // viewOrdersBindingSource
@@ -259,7 +259,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 28);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -269,7 +269,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
@@ -278,7 +278,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
             // 
             // bindingNavigatorMovePreviousItem
@@ -287,13 +287,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -308,7 +308,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -316,7 +316,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -325,20 +325,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // ordersBindingNavigatorSaveItem
             // 
             this.ordersBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.ordersBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("ordersBindingNavigatorSaveItem.Image")));
             this.ordersBindingNavigatorSaveItem.Name = "ordersBindingNavigatorSaveItem";
-            this.ordersBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.ordersBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
             this.ordersBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.ordersBindingNavigatorSaveItem.Click += new System.EventHandler(this.ordersBindingNavigatorSaveItem_Click);
             // 
@@ -350,7 +350,7 @@
             // 
             this.productnameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viewOrdersBindingSource, "productname", true));
             this.productnameTextBox.Location = new System.Drawing.Point(185, 69);
-            this.productnameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.productnameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.productnameTextBox.Name = "productnameTextBox";
             this.productnameTextBox.Size = new System.Drawing.Size(355, 22);
             this.productnameTextBox.TabIndex = 2;
@@ -359,7 +359,7 @@
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viewOrdersBindingSource, "description", true));
             this.descriptionTextBox.Location = new System.Drawing.Point(185, 112);
-            this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(355, 22);
             this.descriptionTextBox.TabIndex = 4;
@@ -368,7 +368,7 @@
             // 
             this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viewOrdersBindingSource, "price", true));
             this.priceTextBox.Location = new System.Drawing.Point(185, 154);
-            this.priceTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.priceTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.priceTextBox.Name = "priceTextBox";
             this.priceTextBox.Size = new System.Drawing.Size(355, 22);
             this.priceTextBox.TabIndex = 6;
@@ -377,7 +377,7 @@
             // 
             this.numberTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viewOrdersBindingSource, "number", true));
             this.numberTextBox.Location = new System.Drawing.Point(185, 201);
-            this.numberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.numberTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.numberTextBox.Name = "numberTextBox";
             this.numberTextBox.Size = new System.Drawing.Size(355, 22);
             this.numberTextBox.TabIndex = 8;
@@ -386,7 +386,7 @@
             // 
             this.dateDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.viewOrdersBindingSource, "date", true));
             this.dateDateTimePicker.Location = new System.Drawing.Point(185, 251);
-            this.dateDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateDateTimePicker.Margin = new System.Windows.Forms.Padding(4);
             this.dateDateTimePicker.Name = "dateDateTimePicker";
             this.dateDateTimePicker.Size = new System.Drawing.Size(355, 22);
             this.dateDateTimePicker.TabIndex = 10;
@@ -395,7 +395,7 @@
             // 
             this.first_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viewOrdersBindingSource, "first_name", true));
             this.first_nameTextBox.Location = new System.Drawing.Point(185, 294);
-            this.first_nameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.first_nameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.first_nameTextBox.Name = "first_nameTextBox";
             this.first_nameTextBox.Size = new System.Drawing.Size(112, 22);
             this.first_nameTextBox.TabIndex = 12;
@@ -404,7 +404,7 @@
             // 
             this.last_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viewOrdersBindingSource, "last_name", true));
             this.last_nameTextBox.Location = new System.Drawing.Point(307, 294);
-            this.last_nameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.last_nameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.last_nameTextBox.Name = "last_nameTextBox";
             this.last_nameTextBox.Size = new System.Drawing.Size(112, 22);
             this.last_nameTextBox.TabIndex = 14;
@@ -413,7 +413,7 @@
             // 
             this.patronymicTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viewOrdersBindingSource, "patronymic", true));
             this.patronymicTextBox.Location = new System.Drawing.Point(428, 294);
-            this.patronymicTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.patronymicTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.patronymicTextBox.Name = "patronymicTextBox";
             this.patronymicTextBox.Size = new System.Drawing.Size(112, 22);
             this.patronymicTextBox.TabIndex = 15;
@@ -422,7 +422,7 @@
             // 
             this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viewOrdersBindingSource, "phone", true));
             this.phoneTextBox.Location = new System.Drawing.Point(185, 345);
-            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.phoneTextBox.Name = "phoneTextBox";
             this.phoneTextBox.Size = new System.Drawing.Size(355, 22);
             this.phoneTextBox.TabIndex = 16;
@@ -431,7 +431,7 @@
             // 
             this.employee_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viewOrdersBindingSource, "employee_name", true));
             this.employee_nameTextBox.Location = new System.Drawing.Point(185, 385);
-            this.employee_nameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.employee_nameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.employee_nameTextBox.Name = "employee_nameTextBox";
             this.employee_nameTextBox.Size = new System.Drawing.Size(159, 22);
             this.employee_nameTextBox.TabIndex = 18;
@@ -440,7 +440,7 @@
             // 
             this.postTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viewOrdersBindingSource, "post", true));
             this.postTextBox.Location = new System.Drawing.Point(353, 385);
-            this.postTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.postTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.postTextBox.Name = "postTextBox";
             this.postTextBox.Size = new System.Drawing.Size(187, 22);
             this.postTextBox.TabIndex = 20;
@@ -449,7 +449,7 @@
             // 
             this.ordersumTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.viewOrdersBindingSource, "ordersum", true));
             this.ordersumTextBox.Location = new System.Drawing.Point(185, 438);
-            this.ordersumTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ordersumTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ordersumTextBox.Name = "ordersumTextBox";
             this.ordersumTextBox.Size = new System.Drawing.Size(355, 22);
             this.ordersumTextBox.TabIndex = 21;
@@ -493,7 +493,7 @@
             this.Controls.Add(this.productnameTextBox);
             this.Controls.Add(this.ordersBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Orders";

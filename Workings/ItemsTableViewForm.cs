@@ -17,8 +17,15 @@ namespace Workings
         {
             this.Validate();
             this.itemsBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.computer_shopDataSet);
-
+            try
+            {
+                this.tableAdapterManager.UpdateAll(this.computer_shopDataSet);
+            }
+            catch
+            {
+                MessageBox.Show("Невозможно удалить, несколько записей одновременно", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            }
         }
 
         private void ItemsTableViewForm_Load(object sender, EventArgs e)

@@ -212,7 +212,7 @@
             this.itemsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.itemsBindingNavigator.Name = "itemsBindingNavigator";
             this.itemsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.itemsBindingNavigator.Size = new System.Drawing.Size(516, 27);
+            this.itemsBindingNavigator.Size = new System.Drawing.Size(516, 31);
             this.itemsBindingNavigator.TabIndex = 0;
             this.itemsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -222,7 +222,7 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
             // bindingNavigatorCountItem

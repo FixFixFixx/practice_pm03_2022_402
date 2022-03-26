@@ -217,7 +217,7 @@
             this.usersBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.usersBindingNavigator.Name = "usersBindingNavigator";
             this.usersBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.usersBindingNavigator.Size = new System.Drawing.Size(479, 27);
+            this.usersBindingNavigator.Size = new System.Drawing.Size(479, 31);
             this.usersBindingNavigator.TabIndex = 1;
             this.usersBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -227,13 +227,13 @@
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorAddNewItem.Text = "Добавить";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(55, 28);
             this.bindingNavigatorCountItem.Text = "для {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Общее число элементов";
             // 
@@ -243,7 +243,7 @@
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorDeleteItem.Text = "Удалить";
             // 
             // bindingNavigatorMoveFirstItem
@@ -252,7 +252,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveFirstItem.Text = "Переместить в начало";
             // 
             // bindingNavigatorMovePreviousItem
@@ -261,13 +261,13 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMovePreviousItem.Text = "Переместить назад";
             // 
             // bindingNavigatorSeparator
             // 
             this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorPositionItem
             // 
@@ -282,7 +282,7 @@
             // bindingNavigatorSeparator1
             // 
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 31);
             // 
             // bindingNavigatorMoveNextItem
             // 
@@ -290,7 +290,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveNextItem.Text = "Переместить вперед";
             // 
             // bindingNavigatorMoveLastItem
@@ -299,20 +299,20 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 28);
             this.bindingNavigatorMoveLastItem.Text = "Переместить в конец";
             // 
             // bindingNavigatorSeparator2
             // 
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 31);
             // 
             // usersBindingNavigatorSaveItem
             // 
             this.usersBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.usersBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("usersBindingNavigatorSaveItem.Image")));
             this.usersBindingNavigatorSaveItem.Name = "usersBindingNavigatorSaveItem";
-            this.usersBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 24);
+            this.usersBindingNavigatorSaveItem.Size = new System.Drawing.Size(29, 28);
             this.usersBindingNavigatorSaveItem.Text = "Сохранить данные";
             this.usersBindingNavigatorSaveItem.Click += new System.EventHandler(this.usersBindingNavigatorSaveItem_Click);
             // 
@@ -320,7 +320,7 @@
             // 
             this.first_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "first_name", true));
             this.first_nameTextBox.Location = new System.Drawing.Point(153, 103);
-            this.first_nameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.first_nameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.first_nameTextBox.Name = "first_nameTextBox";
             this.first_nameTextBox.Size = new System.Drawing.Size(165, 22);
             this.first_nameTextBox.TabIndex = 3;
@@ -329,7 +329,7 @@
             // 
             this.last_nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "last_name", true));
             this.last_nameTextBox.Location = new System.Drawing.Point(153, 145);
-            this.last_nameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.last_nameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.last_nameTextBox.Name = "last_nameTextBox";
             this.last_nameTextBox.Size = new System.Drawing.Size(165, 22);
             this.last_nameTextBox.TabIndex = 5;
@@ -338,7 +338,7 @@
             // 
             this.phoneTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "phone", true));
             this.phoneTextBox.Location = new System.Drawing.Point(153, 239);
-            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.phoneTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.phoneTextBox.Name = "phoneTextBox";
             this.phoneTextBox.Size = new System.Drawing.Size(165, 22);
             this.phoneTextBox.TabIndex = 9;
@@ -347,7 +347,7 @@
             // 
             this.emailTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "email", true));
             this.emailTextBox.Location = new System.Drawing.Point(153, 286);
-            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.emailTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.Size = new System.Drawing.Size(165, 22);
             this.emailTextBox.TabIndex = 11;
@@ -356,7 +356,7 @@
             // 
             this.urlTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "url", true));
             this.urlTextBox.Location = new System.Drawing.Point(153, 334);
-            this.urlTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.urlTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.urlTextBox.Name = "urlTextBox";
             this.urlTextBox.Size = new System.Drawing.Size(165, 22);
             this.urlTextBox.TabIndex = 13;
@@ -371,7 +371,7 @@
             "LOCK",
             "GOLD"});
             this.comboBox1.Location = new System.Drawing.Point(153, 380);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(165, 24);
             this.comboBox1.TabIndex = 15;
@@ -380,7 +380,7 @@
             // 
             this.patronymicTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.usersBindingSource, "patronymic", true));
             this.patronymicTextBox.Location = new System.Drawing.Point(153, 192);
-            this.patronymicTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.patronymicTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.patronymicTextBox.Name = "patronymicTextBox";
             this.patronymicTextBox.Size = new System.Drawing.Size(165, 22);
             this.patronymicTextBox.TabIndex = 16;
@@ -418,7 +418,7 @@
             this.Controls.Add(this.usersBindingNavigator);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Users";

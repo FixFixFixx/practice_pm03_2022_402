@@ -15,8 +15,15 @@ namespace Workings
         {
             this.Validate();
             this.itemsBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.computer_shopDataSet);
-
+            try
+            {
+                this.tableAdapterManager.UpdateAll(this.computer_shopDataSet);
+            }
+            catch {
+                MessageBox.Show("Невозможно удалить, несколько записей одновременно", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            }
+            
         }
 
         private void Items_Load(object sender, EventArgs e)
@@ -71,11 +78,6 @@ namespace Workings
         {
             itemsTableViewForm = new ItemsTableViewForm();
             itemsTableViewForm.Visible = true;
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
