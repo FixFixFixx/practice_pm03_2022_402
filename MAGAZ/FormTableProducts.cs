@@ -12,6 +12,8 @@ namespace MAGAZ
 {
     public partial class FormTableProducts : Form
     {
+        private System.Windows.Forms.DataGridViewColumn COL;
+
         public FormTableProducts()
         {
             InitializeComponent();
@@ -21,5 +23,99 @@ namespace MAGAZ
         {
             button1.Enabled = true;
         }
+
+        private void productsBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.productsBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.bAZADataSet);
+
+        }
+
+        private void FormTableProducts_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bAZADataSet.Products". При необходимости она может быть перемещена или удалена.
+            this.productsTableAdapter.Fill(this.bAZADataSet.Products);
+
+        }
+
+        private void productsDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //создает переменную COL для хранения имени выбранного столбца таблицы
+            COL = new System.Windows.Forms.DataGridViewColumn();
+
+ 
+                switch (listBox1.SelectedIndex)
+            {
+                case 0:
+                    COL = dataGridViewTextBoxColumn2;
+                    break;
+                case 1:
+                    COL = dataGridViewTextBoxColumn3;
+                    break;
+                case 2:
+                    COL = dataGridViewTextBoxColumn4;
+                    break;
+                case 3:
+                    COL = dataGridViewTextBoxColumn5;
+                    break;
+                case 4:
+                    COL = dataGridViewTextBoxColumn6;
+                    break;
+            }
+            
+            if (radioButton1.Checked)
+                productsDataGridView.Sort(COL,
+               System.ComponentModel.ListSortDirection.Ascending);
+            else
+                productsDataGridView.Sort(COL,
+               System.ComponentModel.ListSortDirection.Descending);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            productsBindingSource.Filter = "NAME='" + comboBox1.Text + "'";
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            productsBindingSource.Filter = "";
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < productsDataGridView.ColumnCount - 1; i++)
+            {
+                for (int j = 0; j < productsDataGridView.RowCount - 1; j++)
+                {
+                    productsDataGridView[i, j].Style.BackColor = Color.White;
+                    productsDataGridView[i, j].Style.ForeColor = Color.Black;
+                }
+            }
+            for (int i = 0; i < productsDataGridView.ColumnCount - 1; i++)
+            {
+                for (int j = 0; j < productsDataGridView.RowCount - 1; j++)
+                {
+                    if (productsDataGridView[i,
+                   j].Value.ToString().IndexOf(textBox1.Text) != -1)
+                    {
+                        productsDataGridView[i, j].Style.BackColor = Color.AliceBlue;
+                        productsDataGridView[i, j].Style.ForeColor = Color.Blue;
+
+                    }
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+
+        }
     }
-}
+    }

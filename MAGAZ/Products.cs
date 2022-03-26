@@ -12,6 +12,8 @@ namespace MAGAZ
 {
     public partial class Products : Form
     {
+        private FormTableProducts productstable;
+
         public Products()
         {
             InitializeComponent();
@@ -25,6 +27,8 @@ namespace MAGAZ
 
         private void Products_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bAZADataSet1.Catalog". При необходимости она может быть перемещена или удалена.
+            this.catalogTableAdapter.Fill(this.bAZADataSet1.Catalog);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bAZADataSet.Products". При необходимости она может быть перемещена или удалена.
             this.productsTableAdapter.Fill(this.bAZADataSet.Products);
 
@@ -63,6 +67,12 @@ namespace MAGAZ
             this.Validate();
             this.productsBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.bAZADataSet);
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            productstable = new FormTableProducts();
+            productstable.Visible = true;
         }
     }
 }

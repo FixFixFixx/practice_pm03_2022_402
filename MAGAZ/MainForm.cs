@@ -16,6 +16,7 @@ namespace MAGAZ
         private Catalogs catalogs;
         private Products products;
         private Orders orders;
+        private FormTableProducts formtableproducts;
         public MainForm()
         {
             InitializeComponent();
@@ -46,6 +47,12 @@ namespace MAGAZ
             orders = new Orders();
             orders.Visible = true;
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            formtableproducts = new FormTableProducts();
+            formtableproducts.Visible = true;
         }
     }
 }
