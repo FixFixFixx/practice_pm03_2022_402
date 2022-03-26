@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Workings
@@ -28,6 +21,8 @@ namespace Workings
 
         private void Items_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "computer_shopDataSet.Orders". При необходимости она может быть перемещена или удалена.
+            this.ordersTableAdapter.Fill(this.computer_shopDataSet.Orders);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "computer_shopDataSet.Catalogs". При необходимости она может быть перемещена или удалена.
             this.catalogsTableAdapter.Fill(this.computer_shopDataSet.Catalogs);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "computer_shopDataSet.Items". При необходимости она может быть перемещена или удалена.
@@ -76,6 +71,11 @@ namespace Workings
         {
             itemsTableViewForm = new ItemsTableViewForm();
             itemsTableViewForm.Visible = true;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

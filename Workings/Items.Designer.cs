@@ -66,11 +66,14 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.catalogsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.catalogsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.openTableViewBtn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.catalogsBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.ordersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ordersTableAdapter = new Workings.computer_shopDataSetTableAdapters.OrdersTableAdapter();
+            this.itemsBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             nameLabel = new System.Windows.Forms.Label();
             priceLabel = new System.Windows.Forms.Label();
             quantityLabel = new System.Windows.Forms.Label();
@@ -81,9 +84,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemsBindingNavigator)).BeginInit();
             this.itemsBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.catalogsBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.catalogsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catalogsBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemsBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // nameLabel
@@ -207,7 +212,7 @@
             this.itemsBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.itemsBindingNavigator.Name = "itemsBindingNavigator";
             this.itemsBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.itemsBindingNavigator.Size = new System.Drawing.Size(508, 27);
+            this.itemsBindingNavigator.Size = new System.Drawing.Size(516, 27);
             this.itemsBindingNavigator.TabIndex = 0;
             this.itemsBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -263,7 +268,6 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Положение";
             this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(65, 27);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -327,7 +331,7 @@
             // descriptionTextBox
             // 
             this.descriptionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.itemsBindingSource, "description", true));
-            this.descriptionTextBox.Location = new System.Drawing.Point(180, 258);
+            this.descriptionTextBox.Location = new System.Drawing.Point(180, 261);
             this.descriptionTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.descriptionTextBox.Name = "descriptionTextBox";
             this.descriptionTextBox.Size = new System.Drawing.Size(169, 22);
@@ -430,24 +434,6 @@
             this.maskedTextBox2.Size = new System.Drawing.Size(169, 22);
             this.maskedTextBox2.TabIndex = 21;
             // 
-            // comboBox1
-            // 
-            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.itemsBindingSource, "catalog_id", true));
-            this.comboBox1.DataSource = this.catalogsBindingSource1;
-            this.comboBox1.DisplayMember = "name";
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(180, 299);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(169, 24);
-            this.comboBox1.TabIndex = 22;
-            this.comboBox1.ValueMember = "catalog_id";
-            // 
-            // catalogsBindingSource1
-            // 
-            this.catalogsBindingSource1.DataMember = "Catalogs";
-            this.catalogsBindingSource1.DataSource = this.computer_shopDataSet;
-            // 
             // catalogsBindingSource
             // 
             this.catalogsBindingSource.DataMember = "Catalogs";
@@ -474,14 +460,45 @@
             this.pictureBox1.TabIndex = 24;
             this.pictureBox1.TabStop = false;
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.itemsBindingSource, "catalog_id", true));
+            this.comboBox1.DataSource = this.catalogsBindingSource;
+            this.comboBox1.DisplayMember = "name";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(180, 301);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(169, 24);
+            this.comboBox1.TabIndex = 25;
+            this.comboBox1.ValueMember = "catalog_id";
+            // 
+            // catalogsBindingSource3
+            // 
+            this.catalogsBindingSource3.DataMember = "Catalogs";
+            this.catalogsBindingSource3.DataSource = this.computer_shopDataSet;
+            // 
+            // ordersBindingSource
+            // 
+            this.ordersBindingSource.DataMember = "Orders";
+            this.ordersBindingSource.DataSource = this.computer_shopDataSet;
+            // 
+            // ordersTableAdapter
+            // 
+            this.ordersTableAdapter.ClearBeforeFill = true;
+            // 
+            // itemsBindingSource1
+            // 
+            this.itemsBindingSource1.DataMember = "Items";
+            this.itemsBindingSource1.DataSource = this.computer_shopDataSet;
+            // 
             // Items
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(508, 555);
+            this.ClientSize = new System.Drawing.Size(516, 555);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.openTableViewBtn);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.maskedTextBox2);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.buttonSave);
@@ -513,9 +530,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemsBindingNavigator)).EndInit();
             this.itemsBindingNavigator.ResumeLayout(false);
             this.itemsBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.catalogsBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.catalogsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.catalogsBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ordersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.itemsBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -552,11 +571,14 @@
         private System.Windows.Forms.Button buttonSave;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.MaskedTextBox maskedTextBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
         private computer_shopDataSetTableAdapters.CatalogsTableAdapter catalogsTableAdapter;
         private System.Windows.Forms.BindingSource catalogsBindingSource;
-        private System.Windows.Forms.BindingSource catalogsBindingSource1;
         private System.Windows.Forms.Button openTableViewBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.BindingSource ordersBindingSource;
+        private computer_shopDataSetTableAdapters.OrdersTableAdapter ordersTableAdapter;
+        private System.Windows.Forms.BindingSource catalogsBindingSource3;
+        private System.Windows.Forms.BindingSource itemsBindingSource1;
     }
 }
