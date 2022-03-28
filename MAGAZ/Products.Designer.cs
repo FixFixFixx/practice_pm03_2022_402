@@ -67,16 +67,16 @@ namespace MAGAZ
             this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.bAZADataSet1 = new MAGAZ.BAZADataSet();
             this.catalogBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bAZADataSet1 = new MAGAZ.BAZADataSet();
             this.catalogTableAdapter = new MAGAZ.BAZADataSetTableAdapters.CatalogTableAdapter();
             this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.productsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bAZADataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bAZADataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.catalogBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bAZADataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -406,7 +406,7 @@ namespace MAGAZ
             // 
             this.maskedTextBox1.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.productsBindingSource, "Price", true));
             this.maskedTextBox1.Location = new System.Drawing.Point(217, 102);
-            this.maskedTextBox1.Mask = "99990.00";
+            this.maskedTextBox1.Mask = "999900.9";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(188, 22);
             this.maskedTextBox1.TabIndex = 21;
@@ -432,15 +432,15 @@ namespace MAGAZ
             this.comboBox1.TabIndex = 23;
             this.comboBox1.ValueMember = "Id_Catalog";
             // 
-            // bAZADataSet1
-            // 
-            this.bAZADataSet1.DataSetName = "BAZADataSet";
-            this.bAZADataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // catalogBindingSource
             // 
             this.catalogBindingSource.DataMember = "Catalog";
             this.catalogBindingSource.DataSource = this.bAZADataSet1;
+            // 
+            // bAZADataSet1
+            // 
+            this.bAZADataSet1.DataSetName = "BAZADataSet";
+            this.bAZADataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // catalogTableAdapter
             // 
@@ -494,8 +494,8 @@ namespace MAGAZ
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bAZADataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.catalogBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bAZADataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
